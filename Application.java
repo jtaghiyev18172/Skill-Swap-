@@ -1,48 +1,29 @@
+// write a program that takes an integer using comman-line arguments and find the factorial of that number.
+
 import java.util.Scanner;
 
-public class Application {
+public class Application { 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int size, type, number, layer;
-        float price = 0;
-        System.out.print("Enter the size of the glass: ");
-        size = scanner.nextInt();
-        System.out.print("Enter the type of the glass: ");
-        type = scanner.nextInt();
-        System.out.print("Enter the number of the glass: ");
-        number = scanner.nextInt();
-        System.out.print("Enter the layer of the glass: ");
-        layer = scanner.nextInt();
-        if (size == 1) {
-            if (type == 1) {
-                if (layer == 1) {
-                    price = 0.5f * number;
-                } else if (layer == 2) {
-                    price = 0.7f * number;
-                }
-            } else if (type == 2) {
-                if (layer == 1) {
-                    price = 0.6f * number;
-                } else if (layer == 2) {
-                    price = 0.8f * number;
-                }
-            }
-        } else if (size == 2) {
-            if (type == 1) {
-                if (layer == 1) {
-                    price = 0.7f * number;
-                } else if (layer == 2) {
-                    price = 0.9f * number;
-                }
-            } else if (type == 2) {
-                if (layer == 1) {
-                    price = 0.8f * number;
-                } else if (layer == 2) {
-                    price = 1.0f * number;
-                }
-            }
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int num = input.nextInt();
+        int factorial = 1;
+        for (int i = 1; i <= num; i++) {
+            factorial = factorial * i;
         }
-        System.out.println("The price of the glass is: " + price);
+        System.out.println("Factorial " + num + " is: " + factorial);
+
+        
+     
+        
+    
+        
+        
     }
 }
+
+
+
+
+         
 
